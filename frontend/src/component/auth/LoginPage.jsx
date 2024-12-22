@@ -101,6 +101,7 @@ const LoginPage = () => {
               Sign up to access exclusive features and stay connected.
             </p>
             <button
+              id="bt"
               className="user_unregistered-signup"
               onClick={handleSignupClick}
             >
@@ -113,6 +114,7 @@ const LoginPage = () => {
               Log in to continue where you left off.
             </p>
             <button
+              id="bt"
               className="user_registered-login"
               onClick={handleLoginClick}
             >
