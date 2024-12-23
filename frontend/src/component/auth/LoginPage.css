@@ -6,12 +6,15 @@
 #bt {
   background-color: transparent;
   padding: 0;
-  border: 0;
   outline: 0;
   cursor: pointer;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  border: none;
   &:hover{
     background-color: #f7f7f7 !important;
-    /* color: #333; */
+    color: #333;
   }
 }
 
@@ -152,10 +155,10 @@ input::placeholder {
   -webkit-box-align: center;
   align-items: center;
   width: 100%;
-  height: 100vh;
-  background: url("https://img.freepik.com/free-vector/hotel-hall-concept-illustration_114360-14051.jpg?t=st=1734870473~exp=1734874073~hmac=445f857006a213e76dea66e9c2f1526fde93d32f17ad62c71b028640a1566c25&w=1060")
+  height: 90vh;
+  background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("../../../public/assets/images/reception.png")
     no-repeat center;
-  background-size: cover;
+  background-size: contain;
   
 }
 .user_options-container {
@@ -169,7 +172,7 @@ input::placeholder {
   -webkit-box-pack: justify;
   justify-content: space-between;
   width: 100%;
-  background-color: rgba(34, 34, 34, 0.85);
+  background-color: rgba(34, 34, 34, 0.7);
   border-radius: 38px;
 }
 
@@ -189,12 +192,14 @@ input::placeholder {
   margin-bottom: 15px;
   font-size: 1.66rem;
   line-height: 1em;
+  color: #00f2ff;
 }
 
 .user_unregistered-text,
 .user_registered-text {
   font-size: 0.83rem;
   line-height: 1.4em;
+  color: #f1f1f1;
 }
 
 .user_registered-login,
@@ -203,7 +208,7 @@ input::placeholder {
   border: 1px solid #ccc;
   border-radius: 3px;
   padding: 10px 30px;
-  color: #fff;
+  color: #d0d0d0af;
   text-transform: uppercase;
   line-height: 1em;
   letter-spacing: 0.2rem;
@@ -225,7 +230,7 @@ input::placeholder {
   left: 30px;
   width: calc(50% - 30px);
   min-height: 400px;
-  background-color: #fff;
+  background-color: #dedede;
   border-radius: 38px 38px 38px 38px;
   box-shadow: 2px 0 15px rgba(0, 0, 0, 0.25);
   overflow: hidden;
@@ -247,26 +252,29 @@ input::placeholder {
   font-weight: 500;
   line-height: 1em;
   text-transform: uppercase;
-  color: #e8716d;
+  color: #fa7b77;
   letter-spacing: 0.1rem;
   padding: 30px 0;
 }
 
-.user_options-forms .forms_field:not(:last-of-type) {
-  /* padding-bottom: 10px; */
-}
 .user_options-forms .forms_field-input {
   width: 100%;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1.5px solid #6a6a6a;
   padding: 6px 20px 20px 6px;
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   font-weight: 300;
-  color: gray;
+  color: rgb(64, 64, 64);
   letter-spacing: 0.1rem;
   -webkit-transition: border-color 0.2s ease-in-out;
   transition: border-color 0.2s ease-in-out;
   align-items: center;
+}
+
+.user_options-forms .forms_field-input::placeholder{
+  color: rgb(64, 64, 64);
+  opacity: 1; /* Firefox */
+
 }
 .user_options-forms .forms_fieldset{
   border-radius: 10px;

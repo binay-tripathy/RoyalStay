@@ -1,83 +1,101 @@
 .room-details {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-  }
-  
-  .room-title {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  .room-image {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 20px;
-  }
-  
-  .room-description {
-    font-size: 16px;
-    margin-bottom: 10px;
-  }
-  
-  .room-price {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
-  .booking-container {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  
-  .date-picker,
-  .guest-input {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  .confirm-button,
-  .toggle-booking-button,
-  .accept-button {
-    padding: 10px 20px;
-    background-color: #007F86;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .confirm-button:hover,
-  .toggle-booking-button:hover,
-  .accept-button:hover {
-    background-color: #005F63;
-  }
-  
-  .success-message,
-  .error-message {
-    text-align: center;
-    padding: 10px;
-    border-radius: 5px;
-  }
-  
-  .success-message {
-    background-color: #e0f9e6;
-    color: #317234;
-  }
-  
-  .error-message {
-    background-color: #fce6e6;
-    color: #a83232;
-  }
-  
-  .summary {
-    margin-top: 20px;
-    font-size: 16px;
-    text-align: center;
-  }
-  
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  /* place-items: center; */
+}
+
+.room-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.room-image {
+  width: 50% !important;
+  height: 50% !important;
+  border-radius: 8px !important;
+  margin: 0 200px !important;
+}
+
+.room-description {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.room-price {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.booking-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 200px;
+}
+.bc-1, .bc-2 {
+  display: flex;
+}
+
+.date-picker,
+.guest-input {
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+  gap: 10px;
+}
+
+.confirm-button,
+.toggle-booking-button,
+.accept-button {
+  padding: 10px 20px;
+  margin: 10px 0;
+  background-color: #007f86;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 30%;
+}
+
+.confirm-button:hover,
+.toggle-booking-button:hover,
+.accept-button:hover {
+  background-color: #005f63;
+}
+
+.success-message,
+.error-message {
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.success-message {
+  background-color: #e0f9e6;
+  color: #317234;
+}
+
+.error-message {
+  background-color: #fce6e6;
+  color: #a83232;
+}
+
+.summary {
+  margin-top: 20px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.booking-info{
+  margin-bottom: 100px;
+}
+.confirm-button{
+  margin-left: 95px;
+}
+.accept-button{
+  margin-bottom: 100px;
+}

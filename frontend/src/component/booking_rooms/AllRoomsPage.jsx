@@ -15,7 +15,6 @@ const AllRoomsPage = () => {
   const [roomsPerPage] = useState(6);
   const [checkInDate, setCheckInDate] = useState(null);
   const [checkOutDate, setCheckOutDate] = useState(null);
-  const [guests, setGuests] = useState(1);
   const [searchClicked, setSearchClicked] = useState(false);
 
   useEffect(() => {
@@ -98,20 +97,24 @@ const AllRoomsPage = () => {
         </select>
       </div>
       <div className='date-picker-container'>
-        <label>Check-in Date:</label>
-        <DatePicker
-          selected={checkInDate}
-          onChange={(date) => setCheckInDate(date)}
-          dateFormat="dd/MM/yyyy"
-          placeholderText="Select Check-in Date"
-        />
-        <label>Check-out Date:</label>
-        <DatePicker
-          selected={checkOutDate}
-          onChange={(date) => setCheckOutDate(date)}
-          dateFormat="dd/MM/yyyy"
-          placeholderText="Select Check-out Date"
-        />
+        <div id='cl1'>
+          <label>Check-in Date:</label>
+          <DatePicker
+            selected={checkInDate}
+            onChange={(date) => setCheckInDate(date)}
+            dateFormat="dd/MM/yyyy"
+            placeholderText="Select Check-in Date"
+          />
+        </div>
+        <div id='cl2'>
+          <label>Check-out Date:</label>
+          <DatePicker
+            selected={checkOutDate}
+            onChange={(date) => setCheckOutDate(date)}
+            dateFormat="dd/MM/yyyy"
+            placeholderText="Select Check-out Date"
+          />
+        </div>
       </div>
       <button className="search-button" onClick={handleSearch}>
         Search

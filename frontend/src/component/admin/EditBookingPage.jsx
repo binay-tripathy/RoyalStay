@@ -25,15 +25,15 @@ const EditBookingPage = () => {
     }, [bookingCode]);
 
 
-    const acheiveBooking = async (bookingId) => {
-        if (!window.confirm('Are you sure you want to Acheive this booking?')) {
+    const removeBooking = async (bookingId) => {
+        if (!window.confirm('Are you sure you want to Remove this booking?')) {
             return; // Do nothing if the user cancels
         }
 
         try {
             const response = await ApiService.cancelBooking(bookingId);
             if (response.statusCode === 200) {
-                setSuccessMessage("The boking was Successfully Acheived")
+                setSuccessMessage("The boking was Successfully Removed")
                 
                 setTimeout(() => {
                     setSuccessMessage('');
@@ -82,8 +82,8 @@ const EditBookingPage = () => {
                         <img src={bookingDetails.room.roomPhotoUrl} alt="" sizes="" srcSet="" />
                     </div>
                     <button
-                        className="acheive-booking"
-                        onClick={() => acheiveBooking(bookingDetails.id)}>Acheive Booking
+                        className="remove-booking"
+                        onClick={() => removeBooking(bookingDetails.id)}>Remove Booking
                     </button>
                 </div>
             )}

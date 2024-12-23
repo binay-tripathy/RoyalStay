@@ -99,49 +99,56 @@ const RoomDetailsPage = () => {
 
       <h2 className="room-title">{roomDetails.roomType}</h2>
       <img src={roomDetails.roomPhotoUrl} alt={roomDetails.roomType} className="room-image" />
-      <p className="room-description">{roomDetails.description}</p>
+      {console.log(roomDetails)}
+      <p className="room-description">{roomDetails.roomDescription}</p>
       <p className="room-price">Price: ${roomDetails.roomPrice} / night</p>
 
       {showDatePicker && (
         <div className="booking-container">
-          <div className="date-picker">
-            <Calendar size={16} />
-            <DatePicker
-              selected={checkInDate}
-              onChange={(date) => setCheckInDate(date)}
-              placeholderText="Check-in Date"
-              dateFormat="dd/MM/yyyy"
-            />
+          <div className="bc-1">
+
+            <div className="date-picker">
+              <Calendar size={16} />
+              <DatePicker
+                selected={checkInDate}
+                onChange={(date) => setCheckInDate(date)}
+                placeholderText="Check-in Date"
+                dateFormat="dd/MM/yyyy"
+              />
+            </div>
+            <div className="date-picker">
+              <Calendar size={16} />
+              <DatePicker
+                selected={checkOutDate}
+                onChange={(date) => setCheckOutDate(date)}
+                minDate={checkInDate}
+                placeholderText="Check-out Date"
+                dateFormat="dd/MM/yyyy"
+              />
+            </div>
           </div>
-          <div className="date-picker">
-            <Calendar size={16} />
-            <DatePicker
-              selected={checkOutDate}
-              onChange={(date) => setCheckOutDate(date)}
-              minDate={checkInDate}
-              placeholderText="Check-out Date"
-              dateFormat="dd/MM/yyyy"
-            />
-          </div>
-          <div className="guest-input">
-            <Users size={16} />
-            <input
-              type="number"
-              min="1"
-              value={numAdults}
-              onChange={(e) => setNumAdults(parseInt(e.target.value))}
-              placeholder="Adults"
-            />
-          </div>
-          <div className="guest-input">
-            <User size={16} />
-            <input
-              type="number"
-              min="0"
-              value={numChildren}
-              onChange={(e) => setNumChildren(parseInt(e.target.value))}
-              placeholder="Children"
-            />
+          <div className="bc-2">
+
+            <div className="guest-input">
+              <Users size={16} />
+              <input
+                type="number"
+                min="1"
+                value={numAdults}
+                onChange={(e) => setNumAdults(parseInt(e.target.value))}
+                placeholder="Adults"
+              />
+            </div>
+            <div className="guest-input">
+              <User size={16} />
+              <input
+                type="number"
+                min="0"
+                value={numChildren}
+                onChange={(e) => setNumChildren(parseInt(e.target.value))}
+                placeholder="Children"
+              />
+            </div>
           </div>
           <button onClick={handleConfirmBooking} className="confirm-button">
             Confirm Booking

@@ -74,7 +74,7 @@ function App() {
             />
 
             {/* Fallback Route */}
-            <Route path="*" element={<Navigate to="/login" />} />
+            <Route path="*" element={<Navigate to="/home" />} />
           </Routes>
         </div>
         <FooterComponent />

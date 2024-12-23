@@ -1,6 +1,4 @@
 const FooterComponent = () => {
-
-
     return (
         <footer>
             <span className="my-footer">

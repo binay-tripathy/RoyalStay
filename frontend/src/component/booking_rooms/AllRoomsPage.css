@@ -40,10 +40,14 @@
 }
 
 .date-picker-container {
+  text-align: center;
+  margin-bottom: 20px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
+}
+
+.date-picker-container div {
+ 
 }
 
 .date-picker-container label {
@@ -53,7 +57,23 @@
 }
 
 .date-picker-container .react-datepicker-wrapper {
-  margin-right: 10px;
+  width: 200px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 20px 0 0;
+}
+
+.date-picker-container .react-datepicker__input-container input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.date-picker-container .react-datepicker__input-container input:focus {
+  border-color: #007bff;
 }
 
 .search-button {

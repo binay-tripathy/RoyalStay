@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
 import ApiService from '../../service/ApiService';
 import './RoomResult.css';
 
@@ -30,7 +30,7 @@ const RoomResult = ({ roomSearchResults }) => {
                 ) : (
                   <button
                     className="room-button"
-                    onClick={() => navigate(`/book-room/${room.id}`)}
+                    onClick={() => navigate(`/room-details-book/${room.id}`)}
                   >
                     View/Book Now
                   </button>
@@ -42,6 +42,5 @@ const RoomResult = ({ roomSearchResults }) => {
       )}
     </div>
   );
-};
-
+}
 export default RoomResult;

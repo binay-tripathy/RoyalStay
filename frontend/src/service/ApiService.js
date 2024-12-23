@@ -1,8 +1,7 @@
-import axios from "axios"
+import axios from "axios";
 
 export default class ApiService {
-
-    static BASE_URL = "http://localhost:4040"
+    static BASE_URL = "http://localhost:4040";
 
     static getHeader() {
         const token = localStorage.getItem("token");
@@ -10,6 +9,16 @@ export default class ApiService {
             Authorization: `Bearer ${token}`,
             "Content-Type": "application/json"
         };
+    }
+
+    static isLoggedIn() {
+        const token = localStorage.getItem('token');
+        return !!token;
+    }
+
+    static isAdmin() {
+        const role = localStorage.getItem('role');
+        return role === 'ADMIN';
     }
 
     /**AUTH */
@@ -178,11 +187,6 @@ export default class ApiService {
     static isAuthenticated() {
         const token = localStorage.getItem('token')
         return !!token
-    }
-
-    static isAdmin() {
-        const role = localStorage.getItem('role')
-        return role === 'ADMIN'
     }
 
     static isUser() {
