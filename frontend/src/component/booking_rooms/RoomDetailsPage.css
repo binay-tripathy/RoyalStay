@@ -52,13 +52,18 @@
 .toggle-booking-button,
 .accept-button {
   padding: 10px 20px;
-  margin: 10px 0;
   background-color: #007f86;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   width: 30%;
+}
+.confirm-button{
+  margin-bottom: 20px;
+}
+.toggle-booking-button, .accept-button{
+  margin-bottom: 50px;
 }
 
 .confirm-button:hover,
