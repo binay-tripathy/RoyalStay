@@ -1,4 +1,4 @@
-package com.royalstaydev.RoyalStayHotel.service;
+package com.royalstay.RoyalStay.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -6,8 +6,8 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
-import com.royalstaydev.RoyalStayHotel.exception.OurException;
-import com.royalstaydev.RoyalStayHotel.repo.UserRepository;
+import com.royalstay.RoyalStay.exception.OurException;
+import com.royalstay.RoyalStay.repo.UserRepository;
 
 @Service
 public class CustomUserDetailsService implements UserDetailsService {

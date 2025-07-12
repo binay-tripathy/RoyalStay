@@ -1,8 +1,8 @@
-package com.royalstaydev.RoyalStayHotel.repo;
+package com.royalstay.RoyalStay.repo;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.royalstaydev.RoyalStayHotel.entity.User;
+import com.royalstay.RoyalStay.entity.User;
 
 import java.util.Optional;
 

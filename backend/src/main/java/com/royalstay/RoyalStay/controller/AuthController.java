@@ -1,4 +1,4 @@
-package com.royalstaydev.RoyalStayHotel.controller;
+package com.royalstay.RoyalStay.controller;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.royalstaydev.RoyalStayHotel.dto.LoginRequest;
-import com.royalstaydev.RoyalStayHotel.dto.Response;
-import com.royalstaydev.RoyalStayHotel.entity.User;
-import com.royalstaydev.RoyalStayHotel.service.interfac.IUserService;
+import com.royalstay.RoyalStay.dto.LoginRequest;
+import com.royalstay.RoyalStay.dto.Response;
+import com.royalstay.RoyalStay.entity.User;
+import com.royalstay.RoyalStay.service.interfac.IUserService;
 
 @RestController
 @RequestMapping("/auth")

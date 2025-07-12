@@ -1,9 +1,9 @@
-package com.royalstaydev.RoyalStayHotel.repo;
+package com.royalstay.RoyalStay.repo;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 
-import com.royalstaydev.RoyalStayHotel.entity.Room;
+import com.royalstay.RoyalStay.entity.Room;
 
 import java.time.LocalDate;
 import java.util.List;

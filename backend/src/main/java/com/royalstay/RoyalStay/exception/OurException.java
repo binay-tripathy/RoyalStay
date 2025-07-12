@@ -1,4 +1,4 @@
-package com.royalstaydev.RoyalStayHotel.exception;
+package com.royalstay.RoyalStay.exception;
 
 public class OurException extends RuntimeException {
 

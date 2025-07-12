@@ -1,4 +1,4 @@
-package com.royalstaydev.RoyalStayHotel.service.impl;
+package com.royalstay.RoyalStay.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -6,15 +6,15 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import com.royalstaydev.RoyalStayHotel.dto.LoginRequest;
-import com.royalstaydev.RoyalStayHotel.dto.Response;
-import com.royalstaydev.RoyalStayHotel.dto.UserDTO;
-import com.royalstaydev.RoyalStayHotel.entity.User;
-import com.royalstaydev.RoyalStayHotel.exception.OurException;
-import com.royalstaydev.RoyalStayHotel.repo.UserRepository;
-import com.royalstaydev.RoyalStayHotel.service.interfac.IUserService;
-import com.royalstaydev.RoyalStayHotel.utils.JWTUtils;
-import com.royalstaydev.RoyalStayHotel.utils.Utils;
+import com.royalstay.RoyalStay.dto.LoginRequest;
+import com.royalstay.RoyalStay.dto.Response;
+import com.royalstay.RoyalStay.dto.UserDTO;
+import com.royalstay.RoyalStay.entity.User;
+import com.royalstay.RoyalStay.exception.OurException;
+import com.royalstay.RoyalStay.repo.UserRepository;
+import com.royalstay.RoyalStay.service.interfac.IUserService;
+import com.royalstay.RoyalStay.utils.JWTUtils;
+import com.royalstay.RoyalStay.utils.Utils;
 
 import java.util.List;
 

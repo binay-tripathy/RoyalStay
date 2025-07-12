@@ -1,4 +1,4 @@
-package com.royalstaydev.RoyalStayHotel.service;
+package com.royalstay.RoyalStay.service;
 
 
 import com.amazonaws.auth.AWSStaticCredentialsProvider;
@@ -8,7 +8,7 @@ import com.amazonaws.services.s3.AmazonS3;
 import com.amazonaws.services.s3.AmazonS3ClientBuilder;
 import com.amazonaws.services.s3.model.ObjectMetadata;
 import com.amazonaws.services.s3.model.PutObjectRequest;
-import com.royalstaydev.RoyalStayHotel.exception.OurException;
+import com.royalstay.RoyalStay.exception.OurException;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;

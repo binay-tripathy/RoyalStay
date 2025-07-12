@@ -1,8 +1,8 @@
-package com.royalstaydev.RoyalStayHotel.service.interfac;
+package com.royalstay.RoyalStay.service.interfac;
 
 import org.springframework.web.multipart.MultipartFile;
 
-import com.royalstaydev.RoyalStayHotel.dto.Response;
+import com.royalstay.RoyalStay.dto.Response;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;

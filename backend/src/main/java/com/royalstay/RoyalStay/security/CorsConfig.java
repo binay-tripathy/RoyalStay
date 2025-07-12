@@ -1,4 +1,4 @@
-package com.royalstaydev.RoyalStayHotel.security;
+package com.royalstay.RoyalStay.security;
 
 
 import org.springframework.context.annotation.Bean;

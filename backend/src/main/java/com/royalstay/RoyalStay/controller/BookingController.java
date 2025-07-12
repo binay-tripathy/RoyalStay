@@ -1,4 +1,4 @@
-package com.royalstaydev.RoyalStayHotel.controller;
+package com.royalstay.RoyalStay.controller;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -6,9 +6,9 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
-import com.royalstaydev.RoyalStayHotel.dto.Response;
-import com.royalstaydev.RoyalStayHotel.entity.Booking;
-import com.royalstaydev.RoyalStayHotel.service.interfac.IBookingService;
+import com.royalstay.RoyalStay.dto.Response;
+import com.royalstay.RoyalStay.entity.Booking;
+import com.royalstay.RoyalStay.service.interfac.IBookingService;
 
 @RestController
 @RequestMapping("/bookings")

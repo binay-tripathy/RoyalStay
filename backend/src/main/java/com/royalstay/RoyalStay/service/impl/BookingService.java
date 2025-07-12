@@ -1,21 +1,21 @@
-package com.royalstaydev.RoyalStayHotel.service.impl;
+package com.royalstay.RoyalStay.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
-import com.royalstaydev.RoyalStayHotel.dto.BookingDTO;
-import com.royalstaydev.RoyalStayHotel.dto.Response;
-import com.royalstaydev.RoyalStayHotel.entity.Booking;
-import com.royalstaydev.RoyalStayHotel.entity.Room;
-import com.royalstaydev.RoyalStayHotel.entity.User;
-import com.royalstaydev.RoyalStayHotel.exception.OurException;
-import com.royalstaydev.RoyalStayHotel.repo.BookingRepository;
-import com.royalstaydev.RoyalStayHotel.repo.RoomRepository;
-import com.royalstaydev.RoyalStayHotel.repo.UserRepository;
-import com.royalstaydev.RoyalStayHotel.service.interfac.IBookingService;
-import com.royalstaydev.RoyalStayHotel.service.interfac.IRoomService;
-import com.royalstaydev.RoyalStayHotel.utils.Utils;
+import com.royalstay.RoyalStay.dto.BookingDTO;
+import com.royalstay.RoyalStay.dto.Response;
+import com.royalstay.RoyalStay.entity.Booking;
+import com.royalstay.RoyalStay.entity.Room;
+import com.royalstay.RoyalStay.entity.User;
+import com.royalstay.RoyalStay.exception.OurException;
+import com.royalstay.RoyalStay.repo.BookingRepository;
+import com.royalstay.RoyalStay.repo.RoomRepository;
+import com.royalstay.RoyalStay.repo.UserRepository;
+import com.royalstay.RoyalStay.service.interfac.IBookingService;
+import com.royalstay.RoyalStay.service.interfac.IRoomService;
+import com.royalstay.RoyalStay.utils.Utils;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.royalstaydev.RoyalStayHotel.entity;
+package com.royalstay.RoyalStay.entity;
 
 
 import jakarta.persistence.*;

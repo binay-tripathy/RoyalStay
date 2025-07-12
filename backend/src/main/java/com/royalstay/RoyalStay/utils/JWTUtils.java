@@ -1,4 +1,4 @@
-package com.royalstaydev.RoyalStayHotel.utils;
+package com.royalstay.RoyalStay.utils;
 
 
 import io.jsonwebtoken.Claims;

@@ -1,4 +1,4 @@
-package com.royalstaydev.RoyalStayHotel.dto;
+package com.royalstay.RoyalStay.dto;
 
 import jakarta.validation.constraints.NotBlank;
 import lombok.Data;

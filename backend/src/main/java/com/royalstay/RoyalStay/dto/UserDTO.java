@@ -1,4 +1,4 @@
-package com.royalstaydev.RoyalStayHotel.dto;
+package com.royalstay.RoyalStay.dto;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;

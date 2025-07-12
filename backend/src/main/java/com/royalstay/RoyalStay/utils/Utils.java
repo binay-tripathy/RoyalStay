@@ -1,15 +1,15 @@
-package com.royalstaydev.RoyalStayHotel.utils;
+package com.royalstay.RoyalStay.utils;
 
 import java.security.SecureRandom;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import com.royalstaydev.RoyalStayHotel.dto.BookingDTO;
-import com.royalstaydev.RoyalStayHotel.dto.RoomDTO;
-import com.royalstaydev.RoyalStayHotel.dto.UserDTO;
-import com.royalstaydev.RoyalStayHotel.entity.Booking;
-import com.royalstaydev.RoyalStayHotel.entity.Room;
-import com.royalstaydev.RoyalStayHotel.entity.User;
+import com.royalstay.RoyalStay.dto.BookingDTO;
+import com.royalstay.RoyalStay.dto.RoomDTO;
+import com.royalstay.RoyalStay.dto.UserDTO;
+import com.royalstay.RoyalStay.entity.Booking;
+import com.royalstay.RoyalStay.entity.Room;
+import com.royalstay.RoyalStay.entity.User;
 
 public class Utils {
 

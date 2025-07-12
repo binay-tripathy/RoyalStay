@@ -1,7 +1,7 @@
-package com.royalstaydev.RoyalStayHotel.service.interfac;
+package com.royalstay.RoyalStay.service.interfac;
 
-import com.royalstaydev.RoyalStayHotel.dto.Response;
-import com.royalstaydev.RoyalStayHotel.entity.Booking;
+import com.royalstay.RoyalStay.dto.Response;
+import com.royalstay.RoyalStay.entity.Booking;
 
 public interface IBookingService {
 

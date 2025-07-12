@@ -1,4 +1,4 @@
-package com.royalstaydev.RoyalStayHotel.security;
+package com.royalstay.RoyalStay.security;
 
 
 import jakarta.servlet.FilterChain;
@@ -14,8 +14,8 @@ import org.springframework.security.web.authentication.WebAuthenticationDetailsS
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
 
-import com.royalstaydev.RoyalStayHotel.service.CustomUserDetailsService;
-import com.royalstaydev.RoyalStayHotel.utils.JWTUtils;
+import com.royalstay.RoyalStay.service.CustomUserDetailsService;
+import com.royalstay.RoyalStay.utils.JWTUtils;
 
 import java.io.IOException;
 

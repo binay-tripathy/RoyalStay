@@ -1,4 +1,4 @@
-package com.royalstaydev.RoyalStayHotel.controller;
+package com.royalstay.RoyalStay.controller;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,9 +8,9 @@ import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
-import com.royalstaydev.RoyalStayHotel.dto.Response;
-import com.royalstaydev.RoyalStayHotel.service.interfac.IBookingService;
-import com.royalstaydev.RoyalStayHotel.service.interfac.IRoomService;
+import com.royalstay.RoyalStay.dto.Response;
+import com.royalstay.RoyalStay.service.interfac.IBookingService;
+import com.royalstay.RoyalStay.service.interfac.IRoomService;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
